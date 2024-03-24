@@ -1,0 +1,136 @@
+1. vekje imav
+2. master mi beshe default 
+3. /repositories, new repository ...
+
+4. 
+
+mkdir SI_2024_lab1_183174
+- cd SI_2024_lab1_183174
+- git init -> 
+
+Initialized empty Git repository in /home/ognen/Documents/SI/SI_2024_lab1_183174/.git/
+
+5.
+
+- git remote add origin git@github.com:Ognen67/SI_2024_lab1_183174.git
+
+6. 
+
+echo "Ognen Kirov Todorovski, 183174" >> README.md 
+- git add README.md
+- git commit -m "Initial commit" -> 
+
+[master (root-commit) e3e7ad8] Initial commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+
+
+7. 
+
+- gi downloadiram 3te .java fajlovi, gi kopiram vo folderot SI_2024_lab1_183174
+- git add .
+- git commit -m "Add starter code"
+
+8.
+
+- git push --set-upstream origin master
+
+9.
+
+- git checkout -b bug1 master
+- git checkout -b bug2 master
+
+10.
+
+- git checkout bug1
+
+11.
+
+- ja pravam promenata od (el.length() %2 == 0) -> (el.length() %2 != 0)
+- git add .
+- git commit -m "Fix wrong condition in filterOddLengthStrings"
+
+12. 
+
+- git checkout bug2
+
+13.
+
+- ja pravam promenata od (el.length() < minLength) -> (el.length() <= minLength)
+- git add .
+- git commit -m "Fix wrong condition in makeBigStringFrom"
+
+14.
+
+- git checkout bug1
+
+15. 
+
+- ja dodavam promenata
+- git commit -m "Call method filterOddLengthStrings in main class"
+
+16. 
+
+- git checkout bug2
+
+17.
+
+- ja dodavam promenata
+- git commit -m "Call method makeBigStringFrom in main class"
+
+18. 
+
+- git push origin --all
+
+19. 
+
+- git checkout master
+
+20. 
+
+- git merge bug1
+
+21.
+
+- git push --all
+
+22.
+
+- git checkout bug2
+
+23. 
+
+- git rebase master
+- gi reshavam konfliktite (Acceptnuvam incoming changes, od bug2)
+- git rebase --continue
+
+24. 
+
+- git checkout master
+
+25. 
+
+- git merge bug2
+
+26.
+
+- git push origin --all
+
+27.
+
+- Bidejki mi dava problemi (failed to push some refs to...) prava:
+- git push origin --all --force
+
+28. 
+
+- git log > logs.txt
+- Sledno ke go iskopiram ovoj fajl vo repoto i ke napravam
+- git add .
+- git commit -m "Final Commit"
+
+29. 
+
+- git push origin -all
+
+
+ 
